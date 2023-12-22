@@ -1,0 +1,305 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Sasank Potluri} \\ \vspace{1pt}
+%    123 Street Name, Town, State 12345 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1 (617)-792-6969 ~ 
+    \href{mailto:sasank4496@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{sasank4496@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/sasank-potluri-991496180/}{\raisebox{-0.2\height}\faLinkedin\ \underline{sasank-potluri-991496180/}}  ~
+    \href{https://github.com/sasank98}{\raisebox{-0.2\height}\faGithub\ \underline{sasank98}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Robotics and automation}{Jan 2022 -- May 2024} 
+      {Northeastern Khoury college of Computer Science}{3.73/4 GPA}
+      \vspace{3pt}
+      \newline{Relevant Courses: Computer Vision, Factor Graphs, Sensor Fusion, Deep Learning, Reinforcement Learning, Control Systems}
+    \vspace{-4pt}
+%  \resumeSubHeadingListEnd
+%  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Mechanical Engineering}{Jul 2016 -- Jun 2020}
+      {Manipal Institute of Technology}{8.29/10 GPA}
+      \vspace{3pt}
+      \newline{Relevant Courses: Manufacturing Technology, Computer Aided Drawing, Machine Design, Nonlinear Optimization}
+  \resumeSubHeadingListEnd
+\vspace{-19pt}
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Autonomy Systems Intern $|$ \textmd{\emph{C++, Python, PyTorch, Azure, CANalyzer}}}{Jan 2023 -- Aug 2023}
+      {Danfoss Autonomy}{Minneapolis, Minnesota}
+      \resumeItemListStart
+        \resumeItem{Adapted LIO-SAM for a 6-axis IMU using additional GPS and conducted system testing to identify off-road failure modes}
+        \resumeItem{Developed C++ code to provide ethernet communication between a SLAM controller and Danfoss controller}
+        \resumeItem{Implemented an additional decoder on unimatch network to parallelly compute Optic Flow, Stereo Disparity, and 3D detection}
+        \resumeItem{Achieved a 9.87 AP3D on Object detection task without fine-tuning the encoder of the unimatch network}
+        \resumeItem{Performed 3D-object detection using YOLO-v8 and DBSCAN on the colored pointcloud generated from LiDAR camera fusion}
+%        \resumeItem{Implemented a novel architecture on Stereo Cameras to compute Flow, Stereo Disparity and 3D-object detection simultaneously}
+        \resumeItem{Fused a 16-ch 2D LiDAR with camera data using a depth completion network, resulting in an MAE of 0.178 meters}
+        \resumeItem{Explored different methods to implement a global path planner on the generated map data from LiDAR SLAM algorithms}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant at Hydrodynamics Lab $|$ \textmd{\emph{Ansys, SolidWorks, Matlab}}}{Jan 2020 -- Jun 2020}
+      {Manipal Institute of Technology}{Manipal, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Added additional Pressure sensor to existing test-rig and acquired dynamic pressure and position readings using Matlab}
+        %\resumeItem{3D-printed and added composite reinforcement to Intake Manifold achieving over 50\% weight reduction compared to previous versions}
+        \resumeItem{Used the Data acquisition system to acquire the dynamics and stability of a water-lubricated hydrodynamic bearing}
+        \resumeItem{Created a 3D dynamic CFD model in Ansys and used the data to tune simulation parameters}
+        %\resumeItem{Made changes to the existing model to improve the dynamic stability of the bearing but achieved only similar performance}
+        \resumeItem{Revamped the model to boost dynamic bearing stability, but achieved performance similar to the original design}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Bundle adjustment on Buddha images} $|$ \emph{Python, GTSAM, OpenCV}}{Nov 2023}
+          \resumeItemListStart
+            \resumeItem{Implemented SFM pipeline for sparse 3D reconstruction from images, used SIFT to extract, match and triangulate 3D keypoints}
+%            \resumeItem{Applied bundle adjustment on traingulated keypoints using GTSAM to get optimized keypoint and pose estimates}
+            \resumeItem{Solved Bundle Adjustment using GTSAM to get accurate and optimized keypoints with camera poses}
+          \resumeItemListEnd
+          \vspace{-15pt}
+      \resumeProjectHeading
+          {\textbf{3D object tracking using Multi-view Images } $|$ \emph{Python, PyTorch, NumPY}}{Nov 2023}
+          \resumeItemListStart
+            \resumeItem{Achieved an Object tracking accuracy of 15.1\% by implementing an Extended Kalman Filter on 3D object-detections}
+            \resumeItem{Implemented a tracking decoder on PETR-v1 model to compare results from both approaches}
+          \resumeItemListEnd 
+          \vspace{-15pt}
+          \resumeProjectHeading
+          {\textbf{Feature detection and Image mosaic } $|$ \emph{Linux, Python, GTSAM}}{Sep 2023}
+          \resumeItemListStart
+            \resumeItem{Used the Caltech camera calibration toolbox to compute extrinsic and intrinsic parameters and undistort the images}
+            %\resumeItem{Used Superglue along with other classical feature detectors to compute matches among images on an underwater archeological site}
+            \resumeItem{Applied Superglue and other classical feature detectors to compute image matches in an underwater archaeological site}
+            \resumeItem{Created a mosaic using the matches and optimized the pose graph to obtain better mosaic of the site}
+          \resumeItemListEnd 
+          \vspace{-15pt}
+          \resumeProjectHeading
+          {\textbf{Reinforcement Learning on Robotic Arm } $|$ \emph{Python, PyTorch}}{Nov 2022}
+          \resumeItemListStart
+            %\resumeItem{Iterated through different reinforcement learning algorithms and tuned its hyper-parameters to train a Robotic arm perform pick and place, and reach a point operation}
+            \resumeItem{Iterated through various continuous control algorithms to train a robotic arm for pick-and-place and reach a point operations}
+            \resumeItem{Re-engineered the reward function to penalize the number of moves improving speed and stability of Robotic Arm}
+          \resumeItemListEnd 
+          \vspace{-15pt}
+          \resumeProjectHeading
+          {\textbf{Performance comparision among SLAM algorithms} $|$ \emph{ROS, C++, ORB-SLAM3, LeGO-LOAM, Matlab}}{Apr 2022}
+          \resumeItemListStart
+            %\resumeItem{Collected data from cameras, LiDAR, IMU and GPS Sensors of Northeastern’s self-driving car (NUANCE car) by writing a ROS publisher node in C++}
+            \resumeItem{Collected camera, LiDAR, IMU and GPS data of test vehicle driving in urban environment by writing ROS publisher node in c++}
+            \resumeItem{}
+          \resumeItemListEnd 
+          \vspace{-15pt}
+      \resumeProjectHeading
+          {\textbf{Structural design for FSAE racecar(Formula Manipal)} $|$ \emph{Ansys, CATIA, SolidWorks, Fusion360}}{Oct 2017 -- Feb 2019}
+          \resumeItemListStart
+            % \resumeItem{Implemented SFM pipeline for sparse 3D reconstruction from images, used SIFT to extract, match and triangulate 3D keypoints}
+            \resumeItem{Lead the composite subsystem of the team to efficiently design and manufacture Composite automotive parts}
+           \resumeItem{3D-printed, added composite reinforcement to Intake Manifold, achieving 50\%+ weight reduction compared to prior versions}
+           \resumeItem{Designed and manufactured Carbon-fiber seat, and aero-package and won second place for design in Formula Bharat 2019}
+          \resumeItemListEnd
+          %\vspace{-15pt}
+          % \resumeProjectHeading
+          % {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+          % \resumeItemListStart
+          %   \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
+          %   \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
+          %   \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+          % \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
+     \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+     \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
+    }}
+ \end{itemize}
+ \vspace{-20pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{ACHIEVEMENTS / EXTRACURRICULAR}
+    %\resumeSubHeadingListStart
+    %    \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+    \resumeItemListStart
+        \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+        \vspace{-5pt}
+        \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+        \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+    \resumeItemListEnd
+        
+    %\resumeSubHeadingListEnd
+
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%         \resumeItemListStart
+%             \resumeItem{Languages: Python, Java, C, HTML/CSS, JavaScript, SQL}
+%             \resumeItem{Developer Tools: VS Code, Eclipse, Google Cloud Platform, Android Studio} 
+%             \resumeItem{Technologies/Frameworks: Linux, Jenkins, GitHub, JUnit, WordPress}
+%         \resumeItemListEnd
+%     }}
+%  \end{itemize}
+%  \vspace{-20pt}
+
+\end{document}
