@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,10.5pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -48,7 +48,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
 \addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\textheight}{1.1in} %1.22 for parallel
 
 \urlstyle{same}
 
@@ -138,7 +138,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Master of Science in Robotics and automation}{Jan 2022 -- May 2024} 
-      {Northeastern Khoury college of Computer Science}{3.73/4 GPA}
+      {Northeastern Khoury college of Computer Science}{3.81/4 GPA}
       \vspace{3pt}
       \newline{Relevant Courses: Computer Vision, Factor Graphs, Sensor Fusion, Deep Learning, Reinforcement Learning, Control Systems}
     \vspace{-4pt}
@@ -177,19 +177,26 @@
       {Danfoss Autonomy}{Minneapolis, Minnesota}
       \resumeItemListStart
         \resumeItem{Adapted LIO-SAM for a 6-axis IMU using additional GPS and conducted system testing to identify off-road failure modes}
+        \resumeItem{Leveraged ROS to test third party SLAM algorithms and LIO-SAM on robot hardware for company specific use cases}
+        \resumeItem{Conducted System Testing along with FMEAs on third party SLAM algorithms and LIO-SAM for company specific use cases}
+        
         \resumeItem{Developed C++ code to provide ethernet communication between a SLAM controller and Danfoss controller}
         \resumeItem{Implemented an additional decoder on unimatch network to parallelly compute Optic Flow, Stereo Disparity, and 3D detection}
         \resumeItem{Achieved a 9.87 AP3D on Object detection task without fine-tuning the encoder of the unimatch network}
         \resumeItem{Performed 3D-object detection using YOLO-v8 and DBSCAN on the colored pointcloud generated from LiDAR camera fusion}
+        % \resumeItem{Used synthetic data from Nvidia-IsaacSim to train YOLO-v8 to detect forklifts and achieved mAP of 0.53 on real data}
+        \resumeItem{Leveraged synthetic data from Nvidia-IsaacSim to train YOLO-v8, achieved 0.45 mAP for real-world forklift detection}
 %        \resumeItem{Implemented a novel architecture on Stereo Cameras to compute Flow, Stereo Disparity and 3D-object detection simultaneously}
         \resumeItem{Fused a 16-ch 2D LiDAR with camera data using a depth completion network, resulting in an MAE of 0.178 meters}
-        \resumeItem{Explored different methods to implement a global path planner on the generated map data from LiDAR SLAM algorithms}
+        % \resumeItem{Explored different methods to implement a global path planner on the generated map data from LiDAR SLAM algorithms}
+
       \resumeItemListEnd
 
     \resumeSubheading
-      {Research Assistant at Hydrodynamics Lab $|$ \textmd{\emph{Ansys, SolidWorks, Matlab}}}{Jan 2020 -- Jun 2020}
+      {Research Assistant at Hydrodynamics Lab $|$ \textmd{\emph{Ansys, SolidWorks, Fusion360, Matlab}}}{Jan 2020 -- Jun 2020}
       {Manipal Institute of Technology}{Manipal, Karnataka}
       \resumeItemListStart
+        % \resumeItem{generated CNC code to add another pressure sensor in the testing setup}
         \resumeItem{Added additional Pressure sensor to existing test-rig and acquired dynamic pressure and position readings using Matlab}
         %\resumeItem{3D-printed and added composite reinforcement to Intake Manifold achieving over 50\% weight reduction compared to previous versions}
         \resumeItem{Used the Data acquisition system to acquire the dynamics and stability of a water-lubricated hydrodynamic bearing}
@@ -217,7 +224,9 @@
           {\textbf{3D object tracking using Multi-view Images } $|$ \emph{Python, PyTorch, NumPY}}{Nov 2023}
           \resumeItemListStart
             \resumeItem{Achieved an Object tracking accuracy of 15.1\% by implementing an Extended Kalman Filter on 3D object-detections}
-            \resumeItem{Implemented a tracking decoder on PETR-v1 model to compare results from both approaches}
+            %\resumeItem{Implemented a tracking decoder on PETR-v1 model and achieved an accuracy of 20.8\%, and conducted comparative analysis}
+            % \resumeItem{Implemented a tracking decoder on PETR-v1 model, achieving an accuracy of 20.8\%, and subsequently conducted a comparative analysis of both approaches}
+            \resumeItem{Implemented PETR-v1 tracking decoder, achieving 20.8\% accuracy, and conducted comparative analysis of both approaches}
           \resumeItemListEnd 
           \vspace{-15pt}
           \resumeProjectHeading
@@ -238,20 +247,48 @@
           \resumeItemListEnd 
           \vspace{-15pt}
           \resumeProjectHeading
+          {\textbf{Reinforcement Learning on Robotic Arm } $|$ \emph{Python, PyTorch}}{Nov 2022}
+          \resumeItemListStart
+            %\resumeItem{Iterated through different reinforcement learning algorithms and tuned its hyper-parameters to train a Robotic arm perform pick and place, and reach a point operation}
+            \resumeItem{Iterated through various continuous control algorithms to train a robotic arm for pick-and-place and reach a point operations}
+            \resumeItem{Re-engineered the reward function to penalize the number of moves improving speed and stability of Robotic Arm}
+          \resumeItemListEnd 
+          \vspace{-15pt}
+          \resumeProjectHeading
+          {\textbf{Reinforcement Learning on Robotic Arm } $|$ \emph{Python, PyTorch}}{Nov 2022}
+          \resumeItemListStart
+            %\resumeItem{Iterated through different reinforcement learning algorithms and tuned its hyper-parameters to train a Robotic arm perform pick and place, and reach a point operation}
+            \resumeItem{Iterated through various continuous control algorithms to train a robotic arm for pick-and-place and reach a point operations}
+            \resumeItem{Re-engineered the reward function to penalize the number of moves improving speed and stability of Robotic Arm}
+          \resumeItemListEnd 
+          \vspace{-15pt}
+          \resumeProjectHeading
+          {\textbf{Control system design of Segway } $|$ \emph{Matlab, Simulink}}{May 2022}
+          \resumeItemListStart
+            %\resumeItem{Iterated through different reinforcement learning algorithms and tuned its hyper-parameters to train a Robotic arm perform pick and place, and reach a point operation}
+            \resumeItem{Used stability analysis, and root locus design to pick optimum proportional, integral, and derivative values to control a segway}
+            \resumeItem{Further solved the problem by using state space methods and improved segway performance by adding additional compensator}
+            % \resumeItem{}
+            % \resumeItem{}
+          \resumeItemListEnd 
+          \vspace{-15pt}
+          \resumeProjectHeading
           {\textbf{Performance comparision among SLAM algorithms} $|$ \emph{ROS, C++, ORB-SLAM3, LeGO-LOAM, Matlab}}{Apr 2022}
           \resumeItemListStart
             %\resumeItem{Collected data from cameras, LiDAR, IMU and GPS Sensors of Northeastern’s self-driving car (NUANCE car) by writing a ROS publisher node in C++}
             \resumeItem{Collected camera, LiDAR, IMU and GPS data of test vehicle driving in urban environment by writing ROS publisher node in c++}
-            \resumeItem{}
-          \resumeItemListEnd 
+            % \resumeItem{Used the collected data to test LeGO-LOAM and ORB-SLAM3 and compared the performance and failure cases for both algorithms}
+            \resumeItem{Utilized the collected data to test LeGO-LOAM and ORB-SLAM3 and compared their results and failure cases}
+            \resumeItemListEnd 
           \vspace{-15pt}
       \resumeProjectHeading
           {\textbf{Structural design for FSAE racecar(Formula Manipal)} $|$ \emph{Ansys, CATIA, SolidWorks, Fusion360}}{Oct 2017 -- Feb 2019}
           \resumeItemListStart
             % \resumeItem{Implemented SFM pipeline for sparse 3D reconstruction from images, used SIFT to extract, match and triangulate 3D keypoints}
             \resumeItem{Lead the composite subsystem of the team to efficiently design and manufacture Composite automotive parts}
-           \resumeItem{3D-printed, added composite reinforcement to Intake Manifold, achieving 50\%+ weight reduction compared to prior versions}
-           \resumeItem{Designed and manufactured Carbon-fiber seat, and aero-package and won second place for design in Formula Bharat 2019}
+            \resumeItem{3D-printed, added composite reinforcement to Intake Manifold, achieving 50\%+ weight reduction compared to prior versions}
+            % \resumeItem{Generated the }
+            \resumeItem{Designed and manufactured Carbon-fiber seat, and aero-package and won second place for design in Formula Bharat 2019}
           \resumeItemListEnd
           %\vspace{-15pt}
           % \resumeProjectHeading
@@ -283,10 +320,14 @@
     %\resumeSubHeadingListStart
     %    \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
     \resumeItemListStart
-        \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+        \resumeItem{Appeared for GATE 2021 and secured an All-India Rank of 523 out of 120594 (99.566 percentile)}
         \vspace{-5pt}
-        \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-        \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+        \resumeItem{Secured 3rd place in FSAE Bharat 2019 and 2nd place in the design event of the competition}
+        \vspace{-5pt}
+        \resumeItem{Engineered carbon fiber components for FSAE race car, such as intake manifold, sidepods, and seat, achieving a minimum 13\% weight reduction compared to previous versions}
+        \vspace{-5pt}
+        \resumeItem{Engineered carbon fiber components for FSAE race car achieving a minimum weight reduction of 13\% on all parts }
+        \vspace{-5pt}
     \resumeItemListEnd
         
     %\resumeSubHeadingListEnd

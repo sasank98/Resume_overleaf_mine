@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1703245405 "c:/Users/Sasank/OneDrive - Northeastern University/Documents/GitHub/Resume_mine/resume.tex" "resume.pdf" "resume" 1703245406 0
-  "c:/Users/Sasank/OneDrive - Northeastern University/Documents/GitHub/Resume_mine/resume.tex" 1703245404 14489 6cec4d8b6fac6c982b2bc90972a6bdc0 ""
+["pdflatex"] 1703487909 "c:/Users/Sasank/OneDrive - Northeastern University/Documents/GitHub/Resume_mine/resume.tex" "resume.pdf" "resume" 1703487910 0
+  "c:/Users/Sasank/OneDrive - Northeastern University/Documents/GitHub/Resume_mine/resume.tex" 1703487909 18226 90428fb97c16effc27a782a9dfd8f981 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1703233809 2920 d63721872b8c77041b88e51b8f7c291d ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1703233809 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1703233809 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -108,9 +108,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1703238948 4785563 321aa554689bde33441a615ba7dae12f ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1703239054 8217694 bcd59ec7f507f3012307f31c02b20acb ""
   "c:/texlive/2023/texmf.cnf" 1703238920 713 e69b156964470283e0530f5060668171 ""
-  "resume.aux" 1703245406 800 135347968c589da5b7a57cb9472b3697 "pdflatex"
-  "resume.out" 1703245406 589 0ca42b68a8dc77ce1f7dc52fe4969192 "pdflatex"
-  "resume.tex" 1703245404 14489 6cec4d8b6fac6c982b2bc90972a6bdc0 ""
+  "resume.aux" 1703487910 800 764eb705e2533e2147a76ad819213353 "pdflatex"
+  "resume.out" 1703487910 589 0ca42b68a8dc77ce1f7dc52fe4969192 "pdflatex"
+  "resume.tex" 1703487909 18226 90428fb97c16effc27a782a9dfd8f981 ""
   (generated)
   "resume.aux"
   "resume.log"
